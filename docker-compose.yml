@@ -6,6 +6,7 @@ services:
       SA_PASSWORD: "YourStrong!Passw0rd"
       ACCEPT_EULA: "Y"
       MSSQL_PID : "Developer"
+      MSSQL_DATA_DIR : "/var/opt/mssql/data"
     volumes:
       - D:\docker_volumes\sql_data:/var/opt/mssql/data
     ports:
