@@ -7,6 +7,8 @@ services:
       ACCEPT_EULA: "Y"
       MSSQL_PID : "Developer"
       MSSQL_DATA_DIR : "/var/opt/mssql/data"
+      LANG: "C.UTF-8"
+      LC_ALL: "C.UTF-8"
     volumes:
       - D:\docker_volumes\sql_data:/var/opt/mssql/data
     ports:
