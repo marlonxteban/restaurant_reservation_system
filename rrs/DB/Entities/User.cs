@@ -3,13 +3,13 @@
     public class User
     {
         public int UserId { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
+        public required string Name { get; set; }
+        public string? Email { get; set; }
         private string _passwordHash;
 
         // Reltions
         //public virtual ICollection<Reservation> Reservations { get; set; }
-        public virtual ICollection<UserRole> UserRoles { get; set; }
+        public virtual ICollection<UserRole>? UserRoles { get; set; }
         // Método para asignar la contraseña
         public void SetPassword(string password)
         {

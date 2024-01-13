@@ -9,7 +9,7 @@
 
         public string? Comment { get; set; }
 
-        public virtual required User User { get; set; }
-        public virtual required Table Table { get; set; }
+        public virtual User? User { get; set; }
+        public virtual Table? Table { get; set; }
     }
 }

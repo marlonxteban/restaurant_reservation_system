@@ -2,8 +2,8 @@
 {
     public class Role
     {
-        public string RoleId { get; set; }
-        public string RoleName { get; set; }
-        public virtual ICollection<UserRole> UserRoles { get; set; }
+        public int RoleId { get; set; }
+        public required string RoleName { get; set; }
+        public virtual ICollection<UserRole>? UserRoles { get; set; }
     }
 }
