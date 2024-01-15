@@ -12,7 +12,7 @@ using rrs.DB;
 namespace rrs.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240113053312_InitialCreate")]
+    [Migration("20240115012913_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -82,7 +82,7 @@ namespace rrs.Migrations
                     b.Property<int>("Capacity")
                         .HasColumnType("int");
 
-                    b.Property<string>("Ubication")
+                    b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("TableId");
